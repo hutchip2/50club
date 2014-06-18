@@ -1,53 +1,39 @@
 
 <h1 class="pageTitle">My Account</h1><br />
+<div id="edit_account_form" style="width: 450px; height: 270px; padding-right: 20px;">
 
-<div id="my_acct_form" style="height: 345px; width: 300px;">
-  <div id="my_acct_fields">
-  <div id="labels" style="width: 110px; float: left;">
-    <div class="acct_label">
-      First Name:
-    </div><br /><hr>
-    <div class="acct_label">
-      Last Name:
-    </div><br /><hr>
-    <div class="acct_label">
-      Country:
-    </div><br /><hr>
-    <div class="acct_label">
-      State:
-    </div><br /><hr>
-    <div class="acct_label">
-      Community:
-    </div><br /><hr>
-    <div class="acct_label">
-      Avatar:
-    </div><br />
-    <div style="float: right; margin: 190px 0 0 20px;">
-      <%= link_to "Edit Account",  edit_account_registration_path %>
-    </div>
+<div id="edit_account_fields">
+  <div style="float: right; width: 200px; height: 220px;">
+  <div class="my_acct_label">Avatar<br></div>
+  <%= image_tag current_account.avatar.medium.url, :style => "float: left; margin: 0 20px 0 0;" %>
   </div>
 
-  <div style="width: 160px; height: 100px; float: left;">
-    <div class="acct_info" id="acct_first_name">
-      <%= current_account.first_name %>
-    </div><hr>
-    <div class="acct_info">
-      <%= current_account.last_name %>
-    </div><hr>
-    <div class="acct_info">
-      <%= current_account.country %>
-    </div><hr>
-    <div class="acct_info">
-      <%= current_account.subregion %>
-    </div><hr>
-    <div class="acct_info">
-      <%= current_account.community %>
-    </div><hr>
-    <div class="acct_info">
-      <%= image_tag(current_account.avatar.medium.url) %>
-    </div>
-  </div>
+    <div class="my_acct_label">Email<br /></div>
+    <div><%= current_account.email %></div>
+
+    <div class="my_acct_label">First Name<br /></div>
+    <div><%= current_account.first_name %></div>
+
+    <div class="my_acct_label">Last Name<br /></div>
+    <div><%= current_account.last_name %></div>
+
+    <div class="my_acct_label">Country<br /></div>
+    <div><%= current_account.country %></div>
+    
+    <div class="my_acct_label">Subregion<br /></div>
+    <div><%= current_account.subregion %></div>
+    
+    <div class="my_acct_label">Community<br /></div>
+    <div><%= current_account.community %></div>
+    
+    
+    <img id="avatar_prev" src="#" alt="" style="position: absolute; float: right; width: 200px; height: 200px; margin: -201px 0 0 330px; border: none; display: none;"  />
+
+<br />
+
 </div>
+<%#= link_to "Back", :back %>
+<%= link_to "Edit Account", edit_account_registration_path, :style => "margin: 0 0 0 20px;"%>
 </div>
 
 

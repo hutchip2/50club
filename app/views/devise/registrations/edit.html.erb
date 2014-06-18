@@ -1,14 +1,37 @@
+<head>
+  <script>
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        $('#avatar_prev')
+          .attr('src', e.target.result)
+          .width(200)
+          .height(200);
+        };
+        $('#avatar_prev').css("display","inline");
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+  </script>
+</head>
+
 <h2>Edit <%= resource_name.to_s.humanize %></h2><br />
 
-<div id="edit_account_form">
+<div id="edit_account_form" style="width: 550px; padding-right: 20px;">
 
 <%= semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 <div id="edit_account_fields">
+  <div style="float: right; width: 200px; height: 220px; ">
+  Avatar<br>
+  <%= image_tag current_account.avatar.medium.url, :style => "float: left; margin: 0 20px 0 0;" %>
+  </div>
   <div><%= f.label :email %><br />
   <%= f.email_field :email, :id => "email" %></div>
 
   <%= f.fields_for :contact_info do |ff| %>
+
     <div><%= ff.label :first_name %><br />
     <%= ff.text_field :first_name, :id => "firstName" %></div>
 
@@ -37,7 +60,7 @@
       });
     });
     </script>
-
+    
     <div id="subregion"><%= ff.label :subregion %><br />
     <% if ff.object.country %>
       <% @country = current_account.country %>
@@ -47,6 +70,8 @@
     
     <div id="community"><%= f.label :tristate_community %><br />
       <%= ff.select :community, { :Ohio => @ohio_communities, :Kentucky => @kentucky_communities, :Indiana => @indiana_communities }, :prompt => "Please select a community"  %></div>
+      <%= ff.file_field :avatar, :onchange => "readURL(this)", :style => "float: right; margin: 0 -235px 0 0;"  %>
+      <img id="avatar_prev" src="#" alt="" style="position: absolute; float: right; width: 200px; height: 200px; margin: -201px 0 0 330px; border: none; display: none;"  />
   <% end %>
 
   <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
@@ -67,3 +92,6 @@
 <%#= link_to "Back", :back %>
 
 </div>
+
+  
+
