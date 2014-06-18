@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>50Club</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <script>$(document).keydown(function(event){ if(event.which == 27){ alert($(window).width()); } });</script>
+  </head>
+  <div id='cssmenu'>
+    <ul>
+      <li class='active'><a href='/'><span>Home</span></a></li>
+      <li><a href='#'><span>Book&nbsp;Clubs</span></a></li>
+      <li><a href='#'><span>Card&nbsp;Groups</span></a></li>
+      <li><a href='#'><span>Classes/Workshops</span></a></li>
+      <li><a href='#'><span>Crafts/Antiques</span></a></li>
+      <li><a href='#'><span>Deals&nbsp;N&nbsp;Discounts</span></a></li>
+      <li><a href='#'><span>Dining</span></a></li>
+      <li><a href='#'><span>Golf&nbsp;Buddies</span></a></li>
+      <li><a href='#'><span>Music/Shows</span></a></li>
+      <li><a href='#'><span>Robin's&nbsp;Reviews</span></a></li>
+      <li><a href='#'><span>Special&nbsp;Events</span></a></li>
+      <li><a href='#'><span>Sports&nbsp;&amp;&nbsp;Fitness</span></a></li>
+      <li><a href='#'><span>Things&nbsp;to&nbsp;do</span></a></li>
+      <li class='last'><a href='#'><span>Travel</span></a></li>
+    </ul>
+  </div>
+
+  <div id='header'>
+    <%= link_to_if(account_signed_in?, "#{image_tag('/assets/logout_icon.png')}".html_safe, destroy_account_session_path, :method => :delete, :id => 'sign_in_out') { link_to("#{image_tag('/assets/login_icon.png')}".html_safe, new_account_session_path, :class => 'sign_in_out') } %>
+    <%= link_to_if(account_signed_in?, "#{image_tag('/assets/account_icon.png')}".html_safe, '/myaccount', :method => :get, :id => 'account_icon') { link_to("#{image_tag('/assets/account_icon.png')}".html_safe, new_account_session_path, :id => 'account_icon',:class => 'account_icon') } %>
+  </div>
+
+  <%= flash_messages :span, :notice, :alert %>
+  <body>
+    <br /><%= yield %>
+  </body>
+</html>
+<!--
+<footer style="background-color: grey; min-height: 20px; display: table; text-align: center; margin: 0 auto; min-width: 100%; position: relative; bottom: 0;">
+<small style="color: white;">© Copyright 2014, B.E.I.N.G.S.</small>
+</footer>
+-->

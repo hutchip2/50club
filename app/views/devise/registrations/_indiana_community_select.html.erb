@@ -1,0 +1,11 @@
+<%= fields_for :contact_info do |ff| %>
+  <div><%= ff.label :neighborhoods %><br />
+    <% @indiana_communities = [
+      'Aurora',
+      'Greendale',
+      'Lawrenceburg'
+    ] %>
+    <%= ff.select :neighborhood, @indiana_communities, {:prompt => 'Please select a community'} %>
+    <% end %>
+  </div>
+<% end %>

@@ -1,0 +1,9 @@
+<%= fields_for :contact_info do |ff| %>
+  <div><%= ff.label :subregion %><br />
+    <% if !@subregions.blank? %>
+      <%= ff.select :subregion, @subregions, { :prompt => 'Please select a subregion' } %>
+    <% else %>
+      <%= ff.text_field :subregion %>
+    <% end %>
+  </div>
+<% end %>

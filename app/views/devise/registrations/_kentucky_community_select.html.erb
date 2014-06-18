@@ -1,0 +1,39 @@
+<%= fields_for :contact_info do |ff| %>
+  <div><%= ff.label :neighborhoods %><br />
+    <% @kentucky_communities = [
+      'Alexandria',
+      'Bellevue',
+      'Bromley',
+      'Burlington',
+      'Cold Spring',
+      'Covington',
+      'Crescent Springs',
+      'Crestview Hills',
+      'Dayton',
+      'Edgewood',
+      'Elsmere',
+      'Erlanger',
+      'Fort Mitchell',
+      'Fort Thomas',
+      'Fort Wright',
+      'Florence',
+      'Hebron',
+      'Highland Heights',
+      'Independence',
+      'Lakeside Park',
+      'Ludlow',
+      'Melbourne',
+      'Newport',
+      'Park Hills',
+      'Southgate',
+      'Taylor Mill',
+      'Union',
+      'Verona',
+      'Villa Hills',
+      'Walton',
+      'Wilder'
+    ] %>
+    <%= ff.select :neighborhood, @kentucky_communities, {:prompt => 'Please select a community'} %>
+    <% end %>
+  </div>
+<% end %>

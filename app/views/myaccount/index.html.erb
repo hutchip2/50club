@@ -1,0 +1,53 @@
+
+<h1 class="pageTitle">My Account</h1><br />
+
+<div id="my_acct_form" style="height: 345px; width: 300px;">
+  <div id="my_acct_fields">
+  <div id="labels" style="width: 110px; float: left;">
+    <div class="acct_label">
+      First Name:
+    </div><br /><hr>
+    <div class="acct_label">
+      Last Name:
+    </div><br /><hr>
+    <div class="acct_label">
+      Country:
+    </div><br /><hr>
+    <div class="acct_label">
+      State:
+    </div><br /><hr>
+    <div class="acct_label">
+      Community:
+    </div><br /><hr>
+    <div class="acct_label">
+      Avatar:
+    </div><br />
+    <div style="float: right; margin: 190px 0 0 20px;">
+      <%= link_to "Edit Account",  edit_account_registration_path %>
+    </div>
+  </div>
+
+  <div style="width: 160px; height: 100px; float: left;">
+    <div class="acct_info" id="acct_first_name">
+      <%= current_account.first_name %>
+    </div><hr>
+    <div class="acct_info">
+      <%= current_account.last_name %>
+    </div><hr>
+    <div class="acct_info">
+      <%= current_account.country %>
+    </div><hr>
+    <div class="acct_info">
+      <%= current_account.subregion %>
+    </div><hr>
+    <div class="acct_info">
+      <%= current_account.community %>
+    </div><hr>
+    <div class="acct_info">
+      <%= image_tag(current_account.avatar.medium.url) %>
+    </div>
+  </div>
+</div>
+</div>
+
+

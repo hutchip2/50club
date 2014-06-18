@@ -1,0 +1,71 @@
+<h2>Edit <%= resource_name.to_s.humanize %></h2><br />
+
+<div id="edit_account_form">
+
+<%= semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+<div id="edit_account_fields">
+  <div><%= f.label :email %><br />
+  <%= f.email_field :email, :id => "email" %></div>
+
+  <%= f.fields_for :contact_info do |ff| %>
+    <div><%= ff.label :first_name %><br />
+    <%= ff.text_field :first_name, :id => "firstName" %></div>
+
+    <div><%= ff.label :last_name %><br />
+    <%= ff.text_field :last_name, :id => "lastName" %></div>
+
+    <div id="country"><%= ff.label :country %><br />
+    <%= ff.country_select :country, {priority: %w(BS), prompt: 'Please select a country', :selected => current_account.country} %></div>
+
+    <script type="text/javascript">
+    $(window).load(function() {  
+      $("select").change(function() {
+        if (this.id == "account_contact_info_attributes_country") {
+          var selected = $('#account_contact_info_attributes_country').val();
+          var country = 'country=' + $('select#account_contact_info_attributes_country :selected').text();
+          jQuery.ajax({
+              url: '/accounts/sign_up/update_state_select',
+              data: country,  
+              dataType: 'html',
+              success: function(data){
+                $("#subregion").remove();
+                $("#country").append("<div id='subregion'>"+data+"</div>");
+                },
+            });
+        }
+      });
+    });
+    </script>
+
+    <div id="subregion"><%= ff.label :subregion %><br />
+    <% if ff.object.country %>
+    
+      <% @country = current_account.country %>
+    
+      <%= ff.subregion_select :subregion, @country, :required => false, :selected => current_account.subregion %>
+    <% end %>
+    </div>
+    
+    <div id="community"><%= f.label :tristate_community %><br />
+      <%= ff.select :community, { :Ohio => @ohio_communities, :Kentucky => @kentucky_communities, :Indiana => @indiana_communities }, :prompt => "Please select a community"  %></div>
+  <% end %>
+
+  <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+  <%= f.password_field :password, :autocomplete => "off" %></div>
+
+  <div><%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %></div>
+
+  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+  <%= f.password_field :current_password %></div>
+
+  <div><%= f.submit "Update" %></div>
+
+<% end %><br />
+
+<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete %>.</p><br />
+</div>
+<%#= link_to "Back", :back %>
+
+</div>

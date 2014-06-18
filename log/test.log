@@ -1,0 +1,1982 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  Rendered terrestrials/_form.html.erb (1428.2ms)
+  Rendered terrestrials/edit.html.erb (1437.6ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  Rendered actions/_form.html.erb (2.1ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  Rendered jobs/_form.html.erb (3.8ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Started GET "/photos" for 127.0.0.1 at 2014-05-28 11:37:58 -0400
+Processing by PhotosController#index as HTML
+  [1m[35mPhoto Load (11.5ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo')
+Completed 200 OK in 40ms (Views: 18.8ms | ActiveRecord: 18.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.4ms)[0m  INSERT INTO `actions` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ActionsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAction Load (6.5ms)[0m  SELECT `actions`.* FROM `actions` WHERE `actions`.`id` = 1 LIMIT 1
+Completed 200 OK in 11ms (Views: 2.5ms | ActiveRecord: 6.5ms)
+  [1m[36m (6.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `actions` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ActionsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (6.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `actions` 
+Processing by ActionsController#create as HTML
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by ActionsController#create as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ActionsController#create as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by ActionsController#create as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by ActionsController#create as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by ActionsController#new as HTML
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `actions` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ActionsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35mAction Load (0.2ms)[0m  SELECT `actions`.* FROM `actions` 
+  [1m[36m (6.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `actions` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `actions` 
+Processing by ActionsController#destroy as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAction Load (0.3ms)[0m  [1mSELECT `actions`.* FROM `actions` WHERE `actions`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `actions` WHERE `actions`.`id` = 4[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/actions
+Completed 302 Found in 67ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `actions` [0m
+  [1m[35m (2.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `actions` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ActionsController#destroy as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mAction Load (0.2ms)[0m  [1mSELECT `actions`.* FROM `actions` WHERE `actions`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `actions` WHERE `actions`.`id` = 5[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/actions
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `actions` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ActionsController#update as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mAction Load (0.1ms)[0m  SELECT `actions`.* FROM `actions` WHERE `actions`.`id` = 6 LIMIT 1
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `actions` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ActionsController#update as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mAction Load (0.2ms)[0m  SELECT `actions`.* FROM `actions` WHERE `actions`.`id` = 7 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `actions` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ActionsController#update as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mAction Load (0.1ms)[0m  SELECT `actions`.* FROM `actions` WHERE `actions`.`id` = 8 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `actions` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ActionsController#update as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mAction Load (0.2ms)[0m  SELECT `actions`.* FROM `actions` WHERE `actions`.`id` = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `actions` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ActionsController#update as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mAction Load (0.2ms)[0m  SELECT `actions`.* FROM `actions` WHERE `actions`.`id` = 10 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 1ms
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Started GET "/jobs" for 127.0.0.1 at 2014-05-28 11:37:58 -0400
+Processing by JobsController#index as HTML
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT `jobs`.* FROM `jobs` [0m
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/scholarships" for 127.0.0.1 at 2014-05-28 11:37:58 -0400
+Processing by ScholarshipsController#index as HTML
+  [1m[35mScholarship Load (10.9ms)[0m  SELECT `scholarships`.* FROM `scholarships` 
+Completed 200 OK in 24ms (Views: 5.3ms | ActiveRecord: 18.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered jobs/_form.html.erb (1.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered marines/_form.html.erb (1.6ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered labs/_form.html.erb (2.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered labs/_form.html.erb (1.1ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered actions/_form.html.erb (0.9ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by MediaController#create as HTML
+  Parameters: {"medium"=>{}}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by MediaController#create as HTML
+  Parameters: {"medium"=>{}}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by MediaController#new as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TerrestrialsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTerrestrial Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 1 LIMIT 1
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+  [1m[36m (6.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TerrestrialsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTerrestrial Load (0.3ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 2 LIMIT 1
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (5.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+Processing by TerrestrialsController#create as HTML
+  Parameters: {"terrestrial"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/terrestrials/3
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+  [1m[35m (5.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Processing by TerrestrialsController#create as HTML
+  Parameters: {"terrestrial"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/terrestrials/4
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36mTerrestrial Load (0.3ms)[0m  [1mSELECT `trainings`.* FROM `trainings` ORDER BY `trainings`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by TerrestrialsController#create as HTML
+  Parameters: {"terrestrial"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/terrestrials/5
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (5.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by TerrestrialsController#create as HTML
+  Parameters: {"terrestrial"=>{}}
+Redirected to http://test.host/terrestrials
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by TerrestrialsController#create as HTML
+  Parameters: {"terrestrial"=>{}}
+Redirected to http://test.host/terrestrials
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by TerrestrialsController#new as HTML
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TerrestrialsController#index as HTML
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35mTerrestrial Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` 
+  [1m[36m (9.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `trainings` 
+Processing by TerrestrialsController#destroy as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mTerrestrial Load (0.2ms)[0m  [1mSELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM `trainings` WHERE `trainings`.`id` = 7[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/terrestrials
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+  [1m[35m (5.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TerrestrialsController#destroy as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTerrestrial Load (0.2ms)[0m  [1mSELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `trainings` WHERE `trainings`.`id` = 8[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/terrestrials
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TerrestrialsController#update as HTML
+  Parameters: {"terrestrial"=>{"these"=>"params"}, "id"=>"9"}
+  [1m[35mTerrestrial Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 9 LIMIT 1
+Redirected to http://test.host/terrestrials/9
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TerrestrialsController#update as HTML
+  Parameters: {"terrestrial"=>{}, "id"=>"10"}
+  [1m[35mTerrestrial Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 10 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/terrestrials/10
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TerrestrialsController#update as HTML
+  Parameters: {"terrestrial"=>{}, "id"=>"11"}
+  [1m[35mTerrestrial Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/terrestrials/11
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TerrestrialsController#update as HTML
+  Parameters: {"terrestrial"=>{}, "id"=>"12"}
+  [1m[35mTerrestrial Load (0.1ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 12 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/terrestrials/12
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:58', '2014-05-28 15:37:58')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TerrestrialsController#update as HTML
+  Parameters: {"terrestrial"=>{}, "id"=>"13"}
+  [1m[35mTerrestrial Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 13 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/terrestrials/13
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Started GET "/data" for 127.0.0.1 at 2014-05-28 11:37:58 -0400
+Processing by DataController#index as HTML
+  [1m[36mDatum Load (0.2ms)[0m  [1mSELECT `trainings`.* FROM `trainings` [0m
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:58', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:58')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVideo Load (2.4ms)[0m  [1mSELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video') AND `media`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 2.4ms)
+  [1m[35m (6.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mVideo Load (0.3ms)[0m  [1mSELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video') AND `media`.`id` = 2 LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (6.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `media` WHERE `media`.`type` IN ('Video')
+Processing by VideosController#create as HTML
+  Parameters: {"video"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/videos/3
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `media` WHERE `media`.`type` IN ('Video')
+  [1m[36m (6.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by VideosController#create as HTML
+  Parameters: {"video"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/videos/4
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[35mVideo Load (0.2ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video') ORDER BY `media`.`id` DESC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by VideosController#create as HTML
+  Parameters: {"video"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/videos/5
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by VideosController#create as HTML
+  Parameters: {"video"=>{}}
+Redirected to http://test.host/videos
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by VideosController#create as HTML
+  Parameters: {"video"=>{}}
+Redirected to http://test.host/videos
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by VideosController#new as HTML
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#index as HTML
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[36mVideo Load (0.5ms)[0m  [1mSELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video')[0m
+  [1m[35m (6.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `media` WHERE `media`.`type` IN ('Video')[0m
+Processing by VideosController#destroy as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mVideo Load (0.3ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video') AND `media`.`id` = 7 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`media_id` = 7
+Mysql2::Error: Unknown column 'media.media_id' in 'where clause': SELECT `media`.* FROM `media`  WHERE `media`.`type` IN ('Photo') AND `media`.`media_id` = 7
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 87ms
+  [1m[35m (6.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by VideosController#destroy as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mVideo Load (0.2ms)[0m  [1mSELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video') AND `media`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPhoto Load (0.6ms)[0m  [1mSELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`media_id` = 8[0m
+Mysql2::Error: Unknown column 'media.media_id' in 'where clause': SELECT `media`.* FROM `media`  WHERE `media`.`type` IN ('Photo') AND `media`.`media_id` = 8
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (5.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#update as HTML
+  Parameters: {"video"=>{"these"=>"params"}, "id"=>"9"}
+  [1m[35mVideo Load (0.3ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video') AND `media`.`id` = 9 LIMIT 1
+Redirected to http://test.host/videos/9
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#update as HTML
+  Parameters: {"video"=>{}, "id"=>"10"}
+  [1m[35mVideo Load (0.2ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video') AND `media`.`id` = 10 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/videos/10
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#update as HTML
+  Parameters: {"video"=>{}, "id"=>"11"}
+  [1m[35mVideo Load (0.3ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video') AND `media`.`id` = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/videos/11
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#update as HTML
+  Parameters: {"video"=>{}, "id"=>"12"}
+  [1m[35mVideo Load (0.2ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video') AND `media`.`id` = 12 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/videos/12
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Video', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by VideosController#update as HTML
+  Parameters: {"video"=>{}, "id"=>"13"}
+  [1m[35mVideo Load (0.2ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video') AND `media`.`id` = 13 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/videos/13
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered photos/_form.html.erb (5.6ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered trainings/_form.html.erb (1.7ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered terrestrials/_form.html.erb (1.7ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/news" for 127.0.0.1 at 2014-05-28 11:37:59 -0400
+Processing by NewsController#index as HTML
+  [1m[36mNews Load (0.2ms)[0m  [1mSELECT `news`.* FROM `news` [0m
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PhotosController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`id` = 14 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`id` = 15 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `media` WHERE `media`.`type` IN ('Photo')
+Processing by PhotosController#create as HTML
+  Parameters: {"photo"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/photos
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `media` WHERE `media`.`type` IN ('Photo')
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by PhotosController#create as HTML
+  Parameters: {"photo"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/photos
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') ORDER BY `media`.`id` DESC LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by PhotosController#create as HTML
+  Parameters: {"photo"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/photos
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by PhotosController#create as HTML
+  Parameters: {"photo"=>{}}
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by PhotosController#create as HTML
+  Parameters: {"photo"=>{}}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by PhotosController#new as HTML
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PhotosController#index as HTML
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo')[0m
+  [1m[35m (5.0ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `media` WHERE `media`.`type` IN ('Photo')[0m
+Processing by PhotosController#destroy as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`id` = 20 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mPhoto Load (0.4ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`media_id` = 20
+Mysql2::Error: Unknown column 'media.media_id' in 'where clause': SELECT `media`.* FROM `media`  WHERE `media`.`type` IN ('Photo') AND `media`.`media_id` = 20
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.8ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by PhotosController#destroy as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`id` = 21 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mPhoto Load (0.2ms)[0m  [1mSELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`media_id` = 21[0m
+Mysql2::Error: Unknown column 'media.media_id' in 'where clause': SELECT `media`.* FROM `media`  WHERE `media`.`type` IN ('Photo') AND `media`.`media_id` = 21
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PhotosController#update as HTML
+  Parameters: {"photo"=>{"these"=>"params"}, "id"=>"22"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`id` = 22 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PhotosController#update as HTML
+  Parameters: {"photo"=>{}, "id"=>"23"}
+  [1m[35mPhoto Load (0.3ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`id` = 23 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/photos/23
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PhotosController#update as HTML
+  Parameters: {"photo"=>{}, "id"=>"24"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`id` = 24 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/photos/24
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PhotosController#update as HTML
+  Parameters: {"photo"=>{}, "id"=>"25"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`id` = 25 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `media` (`author`, `created_at`, `date`, `location`, `permissions`, `resolution`, `size`, `species`, `title`, `type`, `updated_at`) VALUES (NULL, '2014-05-28 15:37:59', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'Photo', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by PhotosController#update as HTML
+  Parameters: {"photo"=>{}, "id"=>"26"}
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Photo') AND `media`.`id` = 26 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered trainings/_form.html.erb (1.1ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/labs" for 127.0.0.1 at 2014-05-28 11:37:59 -0400
+Processing by LabsController#index as HTML
+  [1m[36mLab Load (0.2ms)[0m  [1mSELECT `trainings`.* FROM `trainings` [0m
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LabsController#edit as HTML
+  Parameters: {"id"=>"14"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (5.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LabsController#show as HTML
+  Parameters: {"id"=>"15"}
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (6.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `trainings` 
+Processing by LabsController#create as HTML
+  Parameters: {"lab"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by LabsController#create as HTML
+  Parameters: {"lab"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by LabsController#create as HTML
+  Parameters: {"lab"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by LabsController#create as HTML
+  Parameters: {"lab"=>{}}
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by LabsController#create as HTML
+  Parameters: {"lab"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by LabsController#new as HTML
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LabsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35mLab Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` 
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `trainings` 
+Processing by LabsController#destroy as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mLab Load (0.3ms)[0m  [1mSELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 17 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `trainings` WHERE `trainings`.`id` = 17[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/labs
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LabsController#destroy as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mLab Load (0.1ms)[0m  [1mSELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 18 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM `trainings` WHERE `trainings`.`id` = 18[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/labs
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LabsController#update as HTML
+  Parameters: {"lab"=>{"these"=>"params"}, "id"=>"19"}
+Completed 500 Internal Server Error in 60ms
+  [1m[35m (2.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LabsController#update as HTML
+  Parameters: {"lab"=>{}, "id"=>"20"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LabsController#update as HTML
+  Parameters: {"lab"=>{}, "id"=>"21"}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by LabsController#update as HTML
+  Parameters: {"lab"=>{}, "id"=>"22"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by LabsController#update as HTML
+  Parameters: {"lab"=>{}, "id"=>"23"}
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  Rendered videos/_form.html.erb (3.5ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/terrestrials" for 127.0.0.1 at 2014-05-28 11:37:59 -0400
+Processing by TerrestrialsController#index as HTML
+  [1m[35mTerrestrial Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` 
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TrainingsController#edit as HTML
+  Parameters: {"id"=>"24"}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (1.8ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TrainingsController#show as HTML
+  Parameters: {"id"=>"25"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+Processing by TrainingsController#create as HTML
+  Parameters: {"training"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by TrainingsController#create as HTML
+  Parameters: {"training"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by TrainingsController#create as HTML
+  Parameters: {"training"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by TrainingsController#create as HTML
+  Parameters: {"training"=>{}}
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by TrainingsController#create as HTML
+  Parameters: {"training"=>{}}
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by TrainingsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TrainingsController#index as HTML
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[36mTraining Load (0.2ms)[0m  [1mSELECT `trainings`.* FROM `trainings` [0m
+  [1m[35m (5.8ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+Processing by TrainingsController#destroy as HTML
+  Parameters: {"id"=>"27"}
+  [1m[35mTraining Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 27 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `trainings` WHERE `trainings`.`id` = 27
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/trainings
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `trainings` 
+  [1m[36m (5.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TrainingsController#destroy as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mTraining Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 28 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `trainings` WHERE `trainings`.`id` = 28
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/trainings
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:37:59', '2014-05-28 15:37:59')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TrainingsController#update as HTML
+  Parameters: {"training"=>{"these"=>"params"}, "id"=>"29"}
+Completed 500 Internal Server Error in 69ms
+  [1m[36m (1.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TrainingsController#update as HTML
+  Parameters: {"training"=>{}, "id"=>"30"}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TrainingsController#update as HTML
+  Parameters: {"training"=>{}, "id"=>"31"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by TrainingsController#update as HTML
+  Parameters: {"training"=>{}, "id"=>"32"}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by TrainingsController#update as HTML
+  Parameters: {"training"=>{}, "id"=>"33"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered videos/_form.html.erb (1.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/trainings" for 127.0.0.1 at 2014-05-28 11:38:00 -0400
+Processing by TrainingsController#index as HTML
+  [1m[36mTraining Load (0.2ms)[0m  [1mSELECT `trainings`.* FROM `trainings` [0m
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/marines" for 127.0.0.1 at 2014-05-28 11:38:00 -0400
+Processing by MarinesController#index as HTML
+  [1m[35mMarine Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` 
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered news/_form.html.erb (1.9ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MarinesController#edit as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mMarine Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 34 LIMIT 1
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MarinesController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mMarine Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 35 LIMIT 1
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+Processing by MarinesController#create as HTML
+  Parameters: {"marine"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/marines/36
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by MarinesController#create as HTML
+  Parameters: {"marine"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/marines/37
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36mMarine Load (0.2ms)[0m  [1mSELECT `trainings`.* FROM `trainings` ORDER BY `trainings`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by MarinesController#create as HTML
+  Parameters: {"marine"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/marines/38
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by MarinesController#create as HTML
+  Parameters: {"marine"=>{}}
+Redirected to http://test.host/marines
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Processing by MarinesController#create as HTML
+  Parameters: {"marine"=>{}}
+Redirected to http://test.host/marines
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by MarinesController#new as HTML
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MarinesController#index as HTML
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35mMarine Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` 
+  [1m[36m (6.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `trainings` 
+Processing by MarinesController#destroy as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mMarine Load (0.2ms)[0m  [1mSELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 40 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM `trainings` WHERE `trainings`.`id` = 40[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/marines
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by MarinesController#destroy as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mMarine Load (0.2ms)[0m  [1mSELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 41 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM `trainings` WHERE `trainings`.`id` = 41[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/marines
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MarinesController#update as HTML
+  Parameters: {"marine"=>{"these"=>"params"}, "id"=>"42"}
+  [1m[35mMarine Load (0.1ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 42 LIMIT 1
+Redirected to http://test.host/marines/42
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MarinesController#update as HTML
+  Parameters: {"marine"=>{}, "id"=>"43"}
+  [1m[35mMarine Load (0.4ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 43 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/marines/43
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MarinesController#update as HTML
+  Parameters: {"marine"=>{}, "id"=>"44"}
+  [1m[35mMarine Load (0.3ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 44 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/marines/44
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MarinesController#update as HTML
+  Parameters: {"marine"=>{}, "id"=>"45"}
+  [1m[35mMarine Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 45 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/marines/45
+Completed 302 Found in 64ms (ActiveRecord: 0.0ms)
+  [1m[36m (1.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by MarinesController#update as HTML
+  Parameters: {"marine"=>{}, "id"=>"46"}
+  [1m[35mMarine Load (0.3ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 46 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/marines/46
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by NewsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mNews Load (0.2ms)[0m  SELECT `news`.* FROM `news` WHERE `news`.`id` = 1 LIMIT 1
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+  [1m[36m (6.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by NewsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mNews Load (0.3ms)[0m  SELECT `news`.* FROM `news` WHERE `news`.`id` = 2 LIMIT 1
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+  [1m[36m (5.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `news` [0m
+Processing by NewsController#create as HTML
+  Parameters: {"news"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to 
+Completed 404 Not Found in 2ms
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by NewsController#create as HTML
+  Parameters: {"news"=>{}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to 
+Completed 404 Not Found in 2ms
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by NewsController#create as HTML
+  Parameters: {"news"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to 
+Completed 404 Not Found in 2ms
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by NewsController#create as HTML
+  Parameters: {"news"=>{}}
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by NewsController#create as HTML
+  Parameters: {"news"=>{}}
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by NewsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by NewsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35mNews Load (0.2ms)[0m  SELECT `news`.* FROM `news` 
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `news` 
+Processing by NewsController#destroy as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mNews Load (0.2ms)[0m  [1mSELECT `news`.* FROM `news` WHERE `news`.`id` = 7 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `news` WHERE `news`.`id` = 7[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/news
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `news` [0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by NewsController#destroy as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mNews Load (0.2ms)[0m  [1mSELECT `news`.* FROM `news` WHERE `news`.`id` = 8 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM `news` WHERE `news`.`id` = 8[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/news
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by NewsController#update as HTML
+  Parameters: {"news"=>{"these"=>"params"}, "id"=>"9"}
+  [1m[35mNews Load (0.2ms)[0m  SELECT `news`.* FROM `news` WHERE `news`.`id` = 9 LIMIT 1
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by NewsController#update as HTML
+  Parameters: {"news"=>{}, "id"=>"10"}
+  [1m[35mNews Load (0.1ms)[0m  SELECT `news`.* FROM `news` WHERE `news`.`id` = 10 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/news/10
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by NewsController#update as HTML
+  Parameters: {"news"=>{}, "id"=>"11"}
+  [1m[35mNews Load (0.2ms)[0m  SELECT `news`.* FROM `news` WHERE `news`.`id` = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/news/11
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by NewsController#update as HTML
+  Parameters: {"news"=>{}, "id"=>"12"}
+  [1m[35mNews Load (0.2ms)[0m  SELECT `news`.* FROM `news` WHERE `news`.`id` = 12 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `news` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by NewsController#update as HTML
+  Parameters: {"news"=>{}, "id"=>"13"}
+  [1m[35mNews Load (0.2ms)[0m  SELECT `news`.* FROM `news` WHERE `news`.`id` = 13 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/actions" for 127.0.0.1 at 2014-05-28 11:38:00 -0400
+Processing by ActionsController#index as HTML
+  [1m[36mAction Load (0.2ms)[0m  [1mSELECT `actions`.* FROM `actions` [0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  Rendered photos/_form.html.erb (3.5ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  Rendered scholarships/_form.html.erb (2.2ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `jobs` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by JobsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (5.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `jobs` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by JobsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `jobs` 
+Processing by JobsController#create as HTML
+  Parameters: {"job"=>{}}
+Completed 500 Internal Server Error in 61ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by JobsController#create as HTML
+  Parameters: {"job"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by JobsController#create as HTML
+  Parameters: {"job"=>{}}
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by JobsController#create as HTML
+  Parameters: {"job"=>{}}
+Completed 500 Internal Server Error in 4ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by JobsController#create as HTML
+  Parameters: {"job"=>{}}
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by JobsController#new as HTML
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `jobs` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by JobsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35mJob Load (0.2ms)[0m  SELECT `jobs`.* FROM `jobs` 
+  [1m[36m (2.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `jobs` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `jobs` 
+Processing by JobsController#destroy as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mJob Load (0.3ms)[0m  [1mSELECT `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `jobs` WHERE `jobs`.`id` = 4[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/jobs
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `jobs` [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `jobs` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by JobsController#destroy as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mJob Load (0.2ms)[0m  [1mSELECT `jobs`.* FROM `jobs` WHERE `jobs`.`id` = 5 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM `jobs` WHERE `jobs`.`id` = 5[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/jobs
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `jobs` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by JobsController#update as HTML
+  Parameters: {"job"=>{"these"=>"params"}, "id"=>"6"}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `jobs` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by JobsController#update as HTML
+  Parameters: {"job"=>{}, "id"=>"7"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `jobs` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by JobsController#update as HTML
+  Parameters: {"job"=>{}, "id"=>"8"}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.5ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `jobs` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by JobsController#update as HTML
+  Parameters: {"job"=>{}, "id"=>"9"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `jobs` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by JobsController#update as HTML
+  Parameters: {"job"=>{}, "id"=>"10"}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Started GET "/videos" for 127.0.0.1 at 2014-05-28 11:38:00 -0400
+Processing by VideosController#index as HTML
+  [1m[35mVideo Load (0.2ms)[0m  SELECT `media`.* FROM `media` WHERE `media`.`type` IN ('Video')
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  Rendered data/_form.html.erb (1.6ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `scholarships` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ScholarshipsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (5.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `scholarships` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ScholarshipsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `scholarships` [0m
+Processing by ScholarshipsController#create as HTML
+  Parameters: {"scholarship"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Processing by ScholarshipsController#create as HTML
+  Parameters: {"scholarship"=>{}}
+Completed 500 Internal Server Error in 3ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by ScholarshipsController#create as HTML
+  Parameters: {"scholarship"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by ScholarshipsController#create as HTML
+  Parameters: {"scholarship"=>{}}
+Completed 500 Internal Server Error in 4ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by ScholarshipsController#create as HTML
+  Parameters: {"scholarship"=>{}}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by ScholarshipsController#new as HTML
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `scholarships` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ScholarshipsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[36mScholarship Load (0.2ms)[0m  [1mSELECT `scholarships`.* FROM `scholarships` [0m
+  [1m[35m (1.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `scholarships` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `scholarships` [0m
+Processing by ScholarshipsController#destroy as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mScholarship Load (0.1ms)[0m  SELECT `scholarships`.* FROM `scholarships` WHERE `scholarships`.`id` = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `scholarships` WHERE `scholarships`.`id` = 4
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/scholarships
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `scholarships` 
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `scholarships` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ScholarshipsController#destroy as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mScholarship Load (0.2ms)[0m  SELECT `scholarships`.* FROM `scholarships` WHERE `scholarships`.`id` = 5 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM `scholarships` WHERE `scholarships`.`id` = 5
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/scholarships
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `scholarships` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ScholarshipsController#update as HTML
+  Parameters: {"scholarship"=>{"these"=>"params"}, "id"=>"6"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `scholarships` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ScholarshipsController#update as HTML
+  Parameters: {"scholarship"=>{}, "id"=>"7"}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `scholarships` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ScholarshipsController#update as HTML
+  Parameters: {"scholarship"=>{}, "id"=>"8"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `scholarships` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by ScholarshipsController#update as HTML
+  Parameters: {"scholarship"=>{}, "id"=>"9"}
+Completed 500 Internal Server Error in 2ms
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `scholarships` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:00', '2014-05-28 15:38:00')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by ScholarshipsController#update as HTML
+  Parameters: {"scholarship"=>{}, "id"=>"10"}
+Completed 500 Internal Server Error in 2ms
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/media" for 127.0.0.1 at 2014-05-28 11:38:00 -0400
+Processing by MediaController#index as HTML
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered marines/_form.html.erb (1.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered data/_form.html.erb (1.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered news/_form.html.erb (1.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  Rendered scholarships/_form.html.erb (1.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DataController#edit as HTML
+  Parameters: {"id"=>"47"}
+  [1m[35mDatum Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 47 LIMIT 1
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+  [1m[36m (5.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DataController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[35mDatum Load (0.3ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 48 LIMIT 1
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+Processing by DataController#create as HTML
+  Parameters: {"datum"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/data/49
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by DataController#create as HTML
+  Parameters: {"datum"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/data/50
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36mDatum Load (0.1ms)[0m  [1mSELECT `trainings`.* FROM `trainings` ORDER BY `trainings`.`id` DESC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by DataController#create as HTML
+  Parameters: {"datum"=>{}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/data/51
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by DataController#create as HTML
+  Parameters: {"datum"=>{}}
+Redirected to http://test.host/data
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by DataController#create as HTML
+  Parameters: {"datum"=>{}}
+Redirected to http://test.host/data
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by DataController#new as HTML
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DataController#index as HTML
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[35mDatum Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` 
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `trainings` 
+Processing by DataController#destroy as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mDatum Load (0.1ms)[0m  [1mSELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 53 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM `trainings` WHERE `trainings`.`id` = 53[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/data
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `trainings` [0m
+  [1m[35m (0.4ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by DataController#destroy as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mDatum Load (0.2ms)[0m  [1mSELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 54 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `trainings` WHERE `trainings`.`id` = 54[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/data
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+  [1m[36m (2.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DataController#update as HTML
+  Parameters: {"datum"=>{"these"=>"params"}, "id"=>"55"}
+  [1m[35mDatum Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 55 LIMIT 1
+Redirected to http://test.host/data/55
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DataController#update as HTML
+  Parameters: {"datum"=>{}, "id"=>"56"}
+  [1m[35mDatum Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 56 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/data/56
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DataController#update as HTML
+  Parameters: {"datum"=>{}, "id"=>"57"}
+  [1m[35mDatum Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 57 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/data/57
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DataController#update as HTML
+  Parameters: {"datum"=>{}, "id"=>"58"}
+  [1m[35mDatum Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 58 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/data/58
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `trainings` (`created_at`, `updated_at`) VALUES ('2014-05-28 15:38:01', '2014-05-28 15:38:01')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by DataController#update as HTML
+  Parameters: {"datum"=>{}, "id"=>"59"}
+  [1m[35mDatum Load (0.2ms)[0m  SELECT `trainings`.* FROM `trainings` WHERE `trainings`.`id` = 59 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://test.host/data/59
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m

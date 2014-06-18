@@ -1,0 +1,27 @@
+<h1>My Photos</h1><br />
+
+<div id="photos" style="min-height: 300px;">
+    <table id="photoTable">
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <% count = 0 %>
+        <% @photos.each do |photo| %>
+          <script>//$("html").append("<li><%= escape_javascript(image_tag(photo.image.url)) %></li>")</script>
+          <% if count % 5 == 0 %><tr /><tr><% end %>
+          <td class="photo">
+            <center>
+              <a href="/photos/<%= photo.id %>"><%= image_tag photo.image.medium.url %></a>
+              <p>Tags: <%= raw photo.tag_list.map { |t| link_to t, :controller => "photos", :search => t }.join(', ') %></p>
+            </center>
+          </td>
+          <% count += 1 %>
+        <% end %>
+      </tr>
+    </table>
+</div>

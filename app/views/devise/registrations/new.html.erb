@@ -1,0 +1,72 @@
+<head>
+  <script>
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        $('#avatar_prev')
+          .attr('src', e.target.result)
+          .width(100)
+          .height(100);
+        };
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+  </script>
+</head>
+
+<h1>Sign up</h1><br />
+
+<% @contact_info = resource.build_contact_info %>
+<% @contact_info.country = "" %>
+<div id="new_account_form">
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :id => 'new_account') do |f| %>
+  <%= devise_error_messages! %>
+
+
+
+  <%= f.fields_for :contact_info do |ff| %>
+  <img id="avatar_prev" src="#" alt="" style="float: right;" />
+  
+    <div><%= f.label :avatar %><br />
+    <%= ff.file_field :avatar, :onchange => "readURL(this)"  %></div>
+    <div><%= f.label :email %><br />
+    <%= f.email_field :email, :id => 'email' %></div>
+    <div><%= f.label :first_name %><br />
+    <%= ff.text_field :first_name, :id => 'firstName' %></div>
+    <div><%= ff.label :last_name %><br />
+    <%= ff.text_field :last_name, :id => 'lastName' %></div>
+    <div id="country_select"><%= ff.label :country %><br />
+    <%= ff.country_select :country, {priority: %w(US), prompt: 'Please select a country', :id => "countrySelect" } %></div>
+    <script type="text/javascript">
+      $(window).load(function() {  
+        $("select").change(function() {
+          if (this.id == "account_contact_info_attributes_country") {
+            var selected = $('#account_contact_info_attributes_country').val();
+            var country = 'country=' + $('select#account_contact_info_attributes_country :selected').text();
+            jQuery.ajax({
+                url: '/accounts/sign_up/update_state_select',
+                data: country,  
+                dataType: 'html',
+                success: function(data){
+                  $("#subregion_select").remove();
+                  $("#country_select").append("<div id='subregion_select'>"+data+"</div>");
+                  },
+              });
+          }
+        });
+      });
+    </script>
+    <div><%= ff.label :tristate_community %><br />
+    <%= ff.select :community, { :Ohio => @ohio_communities , :Kentucky => @kentucky_communities, :Indiana => @indiana_communities }, :prompt => "Please select a community"  %></div>
+  <% end %>
+
+
+  <div><%= f.label :password %><%= f.label :password_confirmation, :style => "margin: 0 0 0 114px;"%><br />
+  <%= f.password_field :password %><%= f.password_field :password_confirmation, :style => "margin: 0 0 0 5px;" %></div><br />
+
+  <div><%= f.submit "Sign up" %></div><br />
+  
+<% end %>
+</div>
+<%= render "devise/shared/links" %><br />
