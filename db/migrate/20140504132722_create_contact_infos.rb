@@ -3,7 +3,7 @@ class CreateContactInfos < ActiveRecord::Migration
   def migrate(direction)
     super
     # Create a default contact_info for the default user
-    ContactInfo.create!(:first_name => 'Paul', :last_name => 'Hutchinson', :country => 'United States', :subregion => 'OH', :community => 'Union Township', :account_id => 1, :avatar => "assets/placeholder.jpg") if direction == :up
+    ContactInfo.create!(:first_name => 'Paul', :last_name => 'Hutchinson', :country => 'US', :subregion => 'OH', :community => 'Union Township', :account_id => 1, :avatar => "assets/placeholder.jpg") if direction == :up
   end
 
   def change

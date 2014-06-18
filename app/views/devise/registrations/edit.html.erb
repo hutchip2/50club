@@ -16,7 +16,7 @@
     <%= ff.text_field :last_name, :id => "lastName" %></div>
 
     <div id="country"><%= ff.label :country %><br />
-    <%= ff.country_select :country, {priority: %w(BS), prompt: 'Please select a country', :selected => current_account.country} %></div>
+    <%= ff.country_select :country, {priority: %w(US), prompt: 'Please select a country', :selected => current_account.country} %></div>
 
     <script type="text/javascript">
     $(window).load(function() {  
@@ -40,9 +40,7 @@
 
     <div id="subregion"><%= ff.label :subregion %><br />
     <% if ff.object.country %>
-    
       <% @country = current_account.country %>
-    
       <%= ff.subregion_select :subregion, @country, :required => false, :selected => current_account.subregion %>
     <% end %>
     </div>
