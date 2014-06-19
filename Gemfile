@@ -10,7 +10,10 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # Core frameworks
-gem 'mysql2'
+#gem 'mysql2'
+gem 'pg'
+#gem 'activerecord-postgresql-adapter', '~> 0.0.1'
+
 gem 'jquery-rails', '2.3.0'
 gem 'carrierwave', '~> 0.10.0'
 gem 'carrierwave-video'
@@ -20,6 +23,7 @@ gem 'mini_magick'
 #gem 'acts-as-taggable-on'
 gem 'exifr', '~> 1.1.3'
 gem 'jquery-fileupload-rails', '~> 0.4.1'
+
 
 # Authentication
 gem 'devise',                 '2.1.2'
