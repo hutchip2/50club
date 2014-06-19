@@ -2,7 +2,7 @@
 class Accounts::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   #skip_before_filter :verify_authenticity_token, only: :ldap
 
-  before_action :authenticate_account!
+  #before_action :authenticate_account!
 
   #def ldap
   #  auth = request.env['omniauth.auth']

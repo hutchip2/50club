@@ -1980,3 +1980,48 @@ Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
   [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
   [1m[35m (0.0ms)[0m  BEGIN
   [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/labs" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/actions" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/marines" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/scholarships" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/news" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/terrestrials" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/jobs" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/videos" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/trainings" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/media" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/data" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/photos" for 127.0.0.1 at 2014-06-19 10:10:52 -0400
+  [1m[35m (0.2ms)[0m  ROLLBACK
