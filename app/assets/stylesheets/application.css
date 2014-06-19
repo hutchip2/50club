@@ -29,7 +29,7 @@ html, body {
 }
 
 body {
-  min-height: 660px;
+  min-height: 659px;
   width: 80%;
   min-width: 1000px;
   margin: 0 auto;
@@ -39,7 +39,7 @@ body {
 
 
 h1, h2, h3 {
-  margin-left: 200px;
+  margin-left: 180px;
 }
 
 .acct_label {
@@ -48,7 +48,7 @@ h1, h2, h3 {
   margin: 0 0 0 20px;
 }
 
-.my_acct_label {
+.my_acct_label, .edit_acct_label, .sign_in_label, .sign_up_label, .forgot_pass_label {
   font-weight: bold;
 }
 
@@ -78,15 +78,17 @@ h1, h2, h3 {
 
 #edit_account_form, #my_acct_form, #forgot_pass_form, #sign_in_form, #new_account_form {
   width: 400px;
-  margin: 0 200px 0 200px;
+  margin: 0 180px 0 180px;
   border: 1px solid black;
   border-radius: 10px;
   background-color: lightgrey;
 }
 
 #header {
-  background-color: silver;
+  background-color: #f7f7f7;
   height: 48px;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 10px;
 }
 
 #banner {

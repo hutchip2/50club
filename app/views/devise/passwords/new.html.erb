@@ -5,7 +5,7 @@
 <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div><%= f.label :email %><br />
+  <div><%= f.label :email, :class => "forgot_pass_label" %><br />
   <%= f.email_field :email, :style => "width: 208px;" %></div><br />
 
   <div><%= f.submit "Send me reset password instructions" %></div><br />

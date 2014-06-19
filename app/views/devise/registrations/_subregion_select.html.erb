@@ -1,5 +1,5 @@
 <%= fields_for :contact_info do |ff| %>
-  <div><%= ff.label :subregion %><br />
+  <div><%= ff.label :subregion, :class => "sign_up_label" %><br />
     <% if !@subregions.blank? %>
       <%= ff.select :subregion, @subregions, { :prompt => 'Please select a subregion' } %>
     <% else %>

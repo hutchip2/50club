@@ -2,6 +2,7 @@ ActiveAdmin.register Account do
 
   controller { with_role :admin }
   menu :priority => 2
+  menu :parent => "Accounts"
 
   index do
     column :email

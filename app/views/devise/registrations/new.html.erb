@@ -28,15 +28,15 @@
   <%= f.fields_for :contact_info do |ff| %>
   <img id="avatar_prev" src="#" alt="" style="float: right;" />
   
-    <div><%= f.label :avatar %><br />
+    <div><%= f.label :profile_picture, :class => "sign_up_label" %><br />
     <%= ff.file_field :avatar, :onchange => "readURL(this)"  %></div>
-    <div><%= f.label :email %><br />
+    <div><%= f.label :email, :class => "sign_up_label" %><br />
     <%= f.email_field :email, :id => 'email' %></div>
-    <div><%= f.label :first_name %><br />
+    <div><%= f.label :first_name, :class => "sign_up_label" %><br />
     <%= ff.text_field :first_name, :id => 'firstName' %></div>
-    <div><%= ff.label :last_name %><br />
+    <div><%= ff.label :last_name, :class => "sign_up_label" %><br />
     <%= ff.text_field :last_name, :id => 'lastName' %></div>
-    <div id="country_select"><%= ff.label :country %><br />
+    <div id="country_select"><%= ff.label :country, :class => "sign_up_label" %><br />
     <%= ff.country_select :country, {priority: %w(US), prompt: 'Please select a country', :id => "countrySelect" } %></div>
     <script type="text/javascript">
       $(window).load(function() {  
@@ -57,16 +57,17 @@
         });
       });
     </script>
-    <div><%= ff.label :tristate_community %><br />
+    <div><%= ff.label :tristate_community, :class => "sign_up_label" %><br />
     <%= ff.select :community, { :Ohio => @ohio_communities , :Kentucky => @kentucky_communities, :Indiana => @indiana_communities }, :prompt => "Please select a community"  %></div>
   <% end %>
 
 
-  <div><%= f.label :password %><%= f.label :password_confirmation, :style => "margin: 0 0 0 114px;"%><br />
+  <div><%= f.label :password, :class => "sign_up_label" %><%= f.label :password_confirmation, :class => "sign_up_label", :style => "margin: 0 0 0 114px;"%><br />
   <%= f.password_field :password %><%= f.password_field :password_confirmation, :style => "margin: 0 0 0 5px;" %></div><br />
 
   <div><%= f.submit "Sign up" %></div><br />
   
 <% end %>
-</div>
 <%= render "devise/shared/links" %><br />
+</div>
+

@@ -31,7 +31,8 @@
     <%= link_to_if(account_signed_in?, "#{image_tag('/assets/account_icon.png')}".html_safe, '/myaccount', :method => :get, :id => 'account_icon') { link_to("#{image_tag('/assets/account_icon.png')}".html_safe, new_account_session_path, :id => 'account_icon',:class => 'account_icon') } %>
   </div>
 
-  <%= flash_messages :span, :notice, :alert %>
+  <div style="float: right;"><%= flash_messages :span, :notice, :alert %></div>
+  
   <body>
     <br /><%= yield %>
   </body>

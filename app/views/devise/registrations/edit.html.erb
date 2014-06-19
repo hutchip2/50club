@@ -23,22 +23,22 @@
 <%= semantic_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 <div id="edit_account_fields">
-  <div style="float: right; width: 200px; height: 220px; ">
-  Avatar<br>
+  <div style="float: right; width: 200px; height: 220px;">
+  <strong>Profile Picture</strong><br>
   <%= image_tag current_account.avatar.medium.url, :style => "float: left; margin: 0 20px 0 0;" %>
   </div>
-  <div><%= f.label :email %><br />
+  <div><%= f.label :email, :class => "edit_acct_label" %><br />
   <%= f.email_field :email, :id => "email" %></div>
 
   <%= f.fields_for :contact_info do |ff| %>
 
-    <div><%= ff.label :first_name %><br />
+    <div><%= ff.label :first_name, :class => "edit_acct_label" %><br />
     <%= ff.text_field :first_name, :id => "firstName" %></div>
 
-    <div><%= ff.label :last_name %><br />
+    <div><%= ff.label :last_name, :class => "edit_acct_label" %><br />
     <%= ff.text_field :last_name, :id => "lastName" %></div>
 
-    <div id="country"><%= ff.label :country %><br />
+    <div id="country"><%= ff.label :country, :class => "edit_acct_label" %><br />
     <%= ff.country_select :country, {priority: %w(US), prompt: 'Please select a country', :selected => current_account.country} %></div>
 
     <script type="text/javascript">
@@ -61,26 +61,26 @@
     });
     </script>
     
-    <div id="subregion"><%= ff.label :subregion %><br />
+    <div id="subregion"><%= ff.label :subregion, :class => "edit_acct_label" %><br />
     <% if ff.object.country %>
       <% @country = current_account.country %>
       <%= ff.subregion_select :subregion, @country, :required => false, :selected => current_account.subregion %>
     <% end %>
     </div>
     
-    <div id="community"><%= f.label :tristate_community %><br />
+    <div id="community"><%= f.label :tristate_community, :class => "edit_acct_label" %><br />
       <%= ff.select :community, { :Ohio => @ohio_communities, :Kentucky => @kentucky_communities, :Indiana => @indiana_communities }, :prompt => "Please select a community"  %></div>
       <%= ff.file_field :avatar, :onchange => "readURL(this)", :style => "float: right; margin: 0 -235px 0 0;"  %>
       <img id="avatar_prev" src="#" alt="" style="position: absolute; float: right; width: 200px; height: 200px; margin: -201px 0 0 330px; border: none; display: none;"  />
   <% end %>
 
-  <div><%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+  <div><%= f.label :password, :class => "edit_acct_label" %> <i>(leave blank if you don't want to change it)</i><br />
   <%= f.password_field :password, :autocomplete => "off" %></div>
 
-  <div><%= f.label :password_confirmation %><br />
+  <div><%= f.label :password_confirmation, :class => "edit_acct_label" %><br />
   <%= f.password_field :password_confirmation %></div>
 
-  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+  <div><%= f.label :current_password, :class => "edit_acct_label" %> <i>(we need your current password to confirm your changes)</i><br />
   <%= f.password_field :current_password %></div>
 
   <div><%= f.submit "Update" %></div>
