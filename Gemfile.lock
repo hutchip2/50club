@@ -139,6 +139,7 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    mysql2 (0.3.16)
     nested_form (0.3.2)
     net-ldap (0.2.2)
     nokogiri (1.5.11)
@@ -263,6 +264,7 @@ DEPENDENCIES
   jquery-fileupload-rails (~> 0.4.1)
   jquery-rails (= 2.3.0)
   mini_magick
+  mysql2
   nested_form (~> 0.3.2)
   nokogiri (~> 1.5.9)
   omniauth-facebook (= 1.4.1)
