@@ -142,7 +142,6 @@ GEM
     mysql2 (0.3.16)
     nested_form (0.3.2)
     net-ldap (0.2.2)
-    nokogiri (1.5.11)
     oauth2 (0.9.4)
       faraday (>= 0.8, < 0.10)
       jwt (~> 1.0)
@@ -168,7 +167,6 @@ GEM
       oauth2 (~> 0.9.3)
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
-    pg (0.17.1)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.5)
@@ -266,11 +264,9 @@ DEPENDENCIES
   mini_magick
   mysql2
   nested_form (~> 0.3.2)
-  nokogiri (~> 1.5.9)
   omniauth-facebook (= 1.4.1)
   omniauth-google-oauth2 (= 0.1.13)
   omniauth-ldap (= 1.0.2)
-  pg
   rails (= 3.2.13)
   rmagick (= 2.13.2)
   rspec-rails (~> 2.0)
@@ -279,3 +275,6 @@ DEPENDENCIES
   streamio-ffmpeg (~> 1.0.0)
   uglifier (>= 1.2.6)
   yui-compressor (>= 0.9.6)
+
+BUNDLED WITH
+   1.10.5

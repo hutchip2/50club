@@ -14,6 +14,7 @@ development:
   reconnect: false
   database: the50plusclub_development
   pool: 5
+  socket: /opt/local/var/run/mariadb-10.0/mysqld.sock
   username: root
   password:
   host: localhost

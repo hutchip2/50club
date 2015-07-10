@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3', :engine => 'ruby', :engine_version => '1.9.3', :patchlevel => '545'
+ruby '1.9.3', :engine => 'ruby', :engine_version => '1.9.3'
 #ruby=ree-1.8.7-2012.02
 #ruby-gemset=50club
 
@@ -11,7 +11,7 @@ gem 'rails', '3.2.13'
 
 # Core frameworks
 gem 'mysql2'
-gem 'pg'
+#gem 'pg'
 #gem 'activerecord-postgresql-adapter', '~> 0.0.1'
 
 gem 'jquery-rails', '2.3.0'
@@ -41,7 +41,7 @@ gem 'carmen-rails', :git => 'https://github.com/jim/carmen-rails.git'
 gem 'awesome_nested_set',              '~> 2.1.6'
 gem 'active_admin-awesome_nested_set', '~> 0.0.5'
 gem 'nested_form',                     '~> 0.3.2'
-gem 'nokogiri',                        '~> 1.5.9'
+#gem 'nokogiri',                        '~> 1.5.9'
 
 # Gems used only for assets and not required
 # in production environments by default.
